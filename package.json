@@ -3,10 +3,8 @@
       "src": "vite.config.js",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
-  ],
-}
-  "routes": [
+        "distDir": "dist",
+      "routes": [
     { "src": "/(.*)", "dest": "/" }
   ]
 },
@@ -23,4 +21,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "installCommand": "npm install"
+ }],
 }
