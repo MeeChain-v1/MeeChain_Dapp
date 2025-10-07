@@ -5,8 +5,24 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^13.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  }
+  "next": "^13.0.0",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0"
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install"
+},
+  "builds": [
+    {
+      "src": "vite.config.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/" }
+  ]
 }
