@@ -18,4 +18,21 @@
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"
   }
+  {
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install"
+}
+  "builds": [
+    {
+      "src": "vite.config.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+   ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/" }
+  ]
 }
