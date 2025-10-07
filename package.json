@@ -11,7 +11,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    @tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4",
 },
   "dependencies": {
     "react": "19.1.0",
@@ -22,5 +22,5 @@
     "buildCommand": "npm run build",
     "outputDirectory": ".next",
     "installCommand": "npm install"
- }
+ },
 
