@@ -1,25 +1,23 @@
 {
-"builds": [
-      "src": "vite.config.js",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist",
-      "routes": [
-    { "src": "/(.*)", "dest": "/" }
-  ]
-},
+  "name": "meechain2",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
     "start": "next start"
   },
   "dependencies": {
-  "next": "^13.0.0",
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0"
-  "framework": "nextjs",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "installCommand": "npm install"
- }
-      }
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next": "15.5.4"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4"
+  }
+}
