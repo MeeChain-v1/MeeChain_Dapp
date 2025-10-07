@@ -1,12 +1,9 @@
 lockfileVersion: '9.0'
-
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
 importers:
-
-  .:
     dependencies:
       '@flags-sdk/hypertune':
         specifier: ^0.3.0
